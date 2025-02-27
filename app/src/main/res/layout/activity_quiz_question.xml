@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_ques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:textColor="#363A43"
+        android:gravity="center"
+        tools:text="What country does this flag belong to?"/>
+
+        <TextView
+            android:id="@+id/show_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:textSize="26sp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+
+
+        <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        tools:src="@drawable/ic_tw"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Quiz Image"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+    
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="7"
+        android:indeterminate="false"
+        android:minHeight="50dp"
+        android:progress="5"/>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5/7"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="14sp"/>
+
+    
+</LinearLayout>
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="India"
+            android:textSize="18sp"
+            android:textColor="#7A8089"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="India"
+            android:textSize="18sp"
+            android:textColor="#7A8089"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="India"
+            android:textSize="18sp"
+            android:textColor="#7A8089"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="India"
+            android:textSize="18sp"
+            android:textColor="#7A8089"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"/>
+    </LinearLayout>
+
+</ScrollView>
